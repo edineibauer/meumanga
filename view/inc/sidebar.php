@@ -11,23 +11,23 @@ $user = !empty($_SESSION['userlogin']) ? $_SESSION['userlogin'] : ['nome' => 'An
 
     </div>
     <div class="bar-block">
-        <a href="#portfolio" onclick="w3_close()" class="bar-item button padding color-grey-light text-theme">
+        <a href="<?=HOME?>" onclick="w3_close()" class="bar-item button padding color-grey-light text-theme">
             <i class="material-icons left padding-right">home</i>
             <span class="left">Início</span>
         </a>
-        <a href="#portfolio" onclick="w3_close()" class="bar-item button padding color-hover-grey-light hover-text-theme">
+        <a href="<?=HOME?>dashboard" onclick="w3_close()" class="bar-item button padding color-hover-grey-light hover-text-theme">
             <i class="material-icons left padding-right">dashboard</i>
             <span class="left">Meu Painel</span>
         </a>
-        <a href="#contact" onclick="w3_close()" class="bar-item button padding hover-text-theme color-hover-grey-light">
+        <a href="<?=HOME?>dashboard" onclick="w3_close()" class="bar-item button padding hover-text-theme color-hover-grey-light">
             <i class="material-icons left padding-right">create</i>
             <span class="left">Minhas Histórias</span>
         </a>
-        <a href="#about" onclick="w3_close()" class="bar-item button padding hover-text-theme color-hover-grey-light">
+        <a href="<?=HOME?>discovery" onclick="w3_close()" class="bar-item button padding hover-text-theme color-hover-grey-light">
             <i class="material-icons left padding-right">location_searching</i>
             <span class="left">Descobrir</span>
         </a>
-        <a href="#contact" onclick="w3_close()" class="bar-item button padding hover-text-theme color-hover-grey-light">
+        <a href="<?=HOME?>blog" onclick="w3_close()" class="bar-item button padding hover-text-theme color-hover-grey-light">
             <i class="material-icons left padding-right">list</i>
             <span class="left">Blog</span>
         </a>
