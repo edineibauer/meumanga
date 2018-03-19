@@ -1,0 +1,21 @@
+{
+  "name": "conn/meumanga",
+  "description": "Theme Meu Manga",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Edinei J. Bauer",
+      "email": "edineibauer@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "conn/dashboard": "^1"
+  },
+  "autoload": {
+    "psr-0": {
+      "MeuManga": "src/"
+    }
+  }
+}
