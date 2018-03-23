@@ -17,7 +17,7 @@
 
     <div class="col manga-content relative">
         <div class="col color-white z-depth-2 manga-content-card">
-            <div class="col s12 m8" id="manga-capitulo">
+            <div class="col s12 m8 padding-right" id="manga-capitulo">
                 Carregando...
             </div>
             <div class="col s12 m4">
