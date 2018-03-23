@@ -122,6 +122,7 @@ if ($read->getResult())
                 $result = $read->getResult();
                 foreach ($result as $i => $item)
                     $result[$i]['imagem'] = HOME . json_decode($item['imagem'], true)[0]['url'];
+                    $result[$i]['background'] = HOME . json_decode($item['background'], true)[0]['url'];
 
                 $data = [
                     "title" => "Novos Mangas",

@@ -11,15 +11,15 @@
                     <article class="col">
                         <div class="col top-big relative overflow-hidden">
                             <a href="{$home}manga/{$datum.name}" class="article-image">
-                                <img src="tim.php?src={$datum.imagem}&h=190&w=320" alt="{$datum.titulo}"
-                                     title="{$datum.titulo}" style="width:100%; height: 100%"
+                                <img src="tim.php?src={$datum.background}&h=190&w=320" alt="{$datum.nome}"
+                                     title="{$datum.nome}" style="width:100%; height: 100%"
                                      class="hover-opacity article-img">
                                 <header class="row padding-small">
                                     <div class="col left font-xlarge padding-medium border-right color-text-white"
                                          style="width: 50px">
                                         {$i+1}
                                     </div>
-                                    <h1 class="font-large rest padding-large color-text-white">{$datum.titulo}</h1>
+                                    <h1 class="font-large rest padding-large color-text-white">{$datum.nome}</h1>
                                 </header>
                             </a>
                         </div>
@@ -28,8 +28,8 @@
                     <article class="col left margin-right border-top">
                         <div class="col right overflow-hidden" style="width: 60px">
                             <a href="{$home}manga/{$datum.name}" class="overflow-hidden">
-                                <img src="tim.php?src={$datum.imagem}&h=60&w=60" alt="{$datum.titulo}"
-                                     title="{$datum.titulo}"
+                                <img src="tim.php?src={$datum.imagem}&h=60&w=60" alt="{$datum.nome}"
+                                     title="{$datum.nome}"
                                      style="height: 60px; width: 60px;"
                                      class="hover-opacity article-img">
                             </a>
@@ -41,7 +41,7 @@
                             <header class="rest">
                                 <a href="{$home}manga/{$datum.name}">
                                     <h1 class="font-large overflow-hidden padding-large"
-                                        style="height: 52px;">{$datum.titulo}</h1>
+                                        style="height: 52px;">{$datum.nome}</h1>
                                 </a>
                             </header>
                         </div>
