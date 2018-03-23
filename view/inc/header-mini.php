@@ -4,7 +4,7 @@
         <div class="row">
             <?php
             if (defined("LOGO") && !empty(LOGO))
-                echo "<a class='left' href='" . HOME . "'><img src='" . HOME . "tim?src=" . LOGO . "&h=50px' class='padding-4 logo' title='" . SITENAME . "' alt='" . SITENAME . "' /></a><h1 class='padding-0' style='font-size:0'><b>" . SITENAME . "</b></h1>";
+                echo "<a class='left' href='" . HOME . "'><img src='" . HOME . "image/" . LOGO . "&h=50px' class='padding-4 logo' title='" . SITENAME . "' alt='" . SITENAME . "' /></a><h1 class='padding-0' style='font-size:0'><b>" . SITENAME . "</b></h1>";
             else
                 echo "<h1><b>" . SITENAME . "</b></h1>";
             ?>
