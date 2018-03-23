@@ -1,15 +1,15 @@
-<header class="row header relative z-depth-inset-2" style="background-image: url('<?= $header ?>')">
-    <div class="container headerDiv">
+<header class="row header-mini relative">
+    <div class="container col">
 
         <div class="row">
             <?php
             if (defined("LOGO") && !empty(LOGO))
-                echo "<a class='left margin-bottom' href='" . HOME . "'><img src='" . LOGO . "' class='padding-4 logo' title='" . SITENAME . "' alt='" . SITENAME . "' /></a><h1 class='padding-0' style='font-size:0'><b>" . SITENAME . "</b></h1>";
+                echo "<a class='left' href='" . HOME . "'><img src='" . HOME . "tim?src=" . LOGO . "&h=50px' class='padding-4 logo' title='" . SITENAME . "' alt='" . SITENAME . "' /></a><h1 class='padding-0' style='font-size:0'><b>" . SITENAME . "</b></h1>";
             else
                 echo "<h1><b>" . SITENAME . "</b></h1>";
             ?>
 
-            <div class="padding-16 menu">
+            <div class="padding-8 menu">
                 <button class="button hide-large left color-hover-text-grey mini-menu" onclick="w3_open()">
                     <i class="material-icons">menu</i>
                 </button>
@@ -26,10 +26,6 @@
                     <i class="material-icons left padding-right">whatshot</i>Hentai
                 </a>
             </div>
-        </div>
-
-        <div class="row padding-32 container">
-            <input type="search" placeholder="buscar..." class="font-large color-white z-depth-4 search" id="search"/>
         </div>
     </div>
 </header>

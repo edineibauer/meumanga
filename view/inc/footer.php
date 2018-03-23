@@ -1,4 +1,4 @@
-<footer class="container padding-32 color-grey-dark z-depth-inset-2">
+<footer class="container col footer padding-32 color-grey-dark z-depth-inset-2">
     <div class="row-padding">
         <div class="third">
             <?php

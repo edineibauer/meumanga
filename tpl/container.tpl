@@ -19,14 +19,14 @@
             <article class="col left margin-right" style="width: 237px">
                 <div class="col relative overflow-hidden border" style="height: 300px;">
                     <a href="{$home}manga/{$datum.name}" class="article-image overflow-hidden">
-                        <img src="tim.php?src={$datum.imagem}&h=316&w=237" alt="{$datum.titulo}" title="{$datum.titulo}"
+                        <img src="{$home}tim.php?src={$datum.imagem}&h=316&w=237" alt="{$datum.nome}" title="{$datum.nome}"
                              style="height: auto; width: 237px;"
                              class="hover-opacity article-img">
                     </a>
                 </div>
                 <header class="col padding-15">
                     <a href="{$home}manga/{$datum.name}">
-                        <h1 class="font-large overflow-hidden" style="height: 52px;">{$datum.titulo}</h1>
+                        <h1 class="font-large overflow-hidden" style="height: 52px;">{$datum.nome}</h1>
                     </a>
                 </header>
             </article>

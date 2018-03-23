@@ -3,33 +3,39 @@ $user = !empty($_SESSION['userlogin']) ? $_SESSION['userlogin'] : ['nome' => 'An
 ?>
 
 
-<nav class="sidebar card collapse color-white animate-left" id="mySidebar"><br>
-    <div class="row padding-small margin-bottom">
-        <?=!empty($user['imagem']) ? "<img src='" . HOME . "tim.php?src=" . HOME . $user['imagem'] . "&h=90&w=90' class='left radius-circle' style='height:60px;width:60px' />": '<i class="material-icons left font-jumbo">account_circle</i>'?>
+<nav class="sidebar card collapse color-white animate-left" id="mySidebar">
+    <div class="col padding-small margin-bottom relative margin-top" style="height: 50px">
+        <?=!empty($user['imagem']) ? "<img src='" . HOME . "tim.php?src=" . HOME . $user['imagem'] . "&h=70&w=70' class='sidebar-img left radius-circle' style='height:auto;max-width:50px;width:100%' />": '<i class="material-icons left font-jumbo">account_circle</i>'?>
 
-        <span class="left container padding-16"><?=$user['nome']?></span>
+        <span class="sidebar-nome sidebar-menu container padding-16"><?=$user['nome']?></span>
 
     </div>
-    <div class="bar-block">
-        <a href="<?=HOME?>" onclick="w3_close()" class="bar-item button padding color-grey-light text-theme">
+    <div class="bar-block sidebar-menu-ul relative col">
+        <span class="bar-item button relative padding-0">
+            <i class="material-icons left padding-right i-search padding">search</i>
+            <span class="left sidebar-menu" style="width: 200px">
+                <input type="search" placeholder="buscar..." class="color-white" id="search"/>
+            </span>
+        </span>
+        <a href="<?=HOME?>" onclick="w3_close()" class="bar-item button color-grey-light text-theme relative">
             <i class="material-icons left padding-right">home</i>
-            <span class="left">Início</span>
+            <span class="left sidebar-menu">Início</span>
         </a>
-        <a href="<?=HOME?>dashboard" onclick="w3_close()" class="bar-item button padding color-hover-grey-light hover-text-theme">
+        <a href="<?=HOME?>dashboard" onclick="w3_close()" class="bar-item button color-hover-grey-light hover-text-theme relative">
             <i class="material-icons left padding-right">dashboard</i>
-            <span class="left">Meu Painel</span>
+            <span class="left sidebar-menu">Meu Painel</span>
         </a>
-        <a href="<?=HOME?>dashboard" onclick="w3_close()" class="bar-item button padding hover-text-theme color-hover-grey-light">
+        <a href="<?=HOME?>dashboard" onclick="w3_close()" class="bar-item button hover-text-theme color-hover-grey-light relative">
             <i class="material-icons left padding-right">create</i>
-            <span class="left">Minhas Histórias</span>
+            <span class="left sidebar-menu">Minhas Histórias</span>
         </a>
-        <a href="<?=HOME?>discovery" onclick="w3_close()" class="bar-item button padding hover-text-theme color-hover-grey-light">
+        <a href="<?=HOME?>discovery" onclick="w3_close()" class="bar-item button hover-text-theme color-hover-grey-light relative">
             <i class="material-icons left padding-right">location_searching</i>
-            <span class="left">Descobrir</span>
+            <span class="left sidebar-menu">Descobrir</span>
         </a>
-        <a href="<?=HOME?>blog" onclick="w3_close()" class="bar-item button padding hover-text-theme color-hover-grey-light">
+        <a href="<?=HOME?>blog" onclick="w3_close()" class="bar-item button hover-text-theme color-hover-grey-light relative">
             <i class="material-icons left padding-right">list</i>
-            <span class="left">Blog</span>
+            <span class="left sidebar-menu">Blog</span>
         </a>
     </div>
     <div class="panel font-large">
@@ -45,3 +51,16 @@ $user = !empty($_SESSION['userlogin']) ? $_SESSION['userlogin'] : ['nome' => 'An
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="overlay hide-large animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
      id="myOverlay"></div>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+</script>

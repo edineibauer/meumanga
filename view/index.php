@@ -14,8 +14,8 @@ if ($read->getResult())
     $header = HOME . str_replace('\\', '/', json_decode($read->getResult()[rand(0, (count($read->getResult()) - 1))]['imagem'], true)[0]['url']);
 ?>
 
+<?php include_once 'inc/header.php'?>
 <div class="main relative">
-    <?php include_once 'inc/header.php'?>
 
     <?php
     /*
@@ -150,18 +150,5 @@ if ($read->getResult())
 
     </section>
 
-   <?php include_once 'inc/footer.php'?>
 </div>
-
-<script>
-    // Script to open and close sidebar
-    function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-    }
-
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-    }
-</script>
+<?php include_once 'inc/footer.php'?>
