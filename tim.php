@@ -807,7 +807,7 @@ function get_document_root($src) {
  */
 function display_error($errorString = '') {
 
-    require('./_app/Config.inc.php');
+    require('./_config/config.php');
     header("Location: " . HOME . "/tim.php?src=" . HOME . "/uploads/demo.jpg&w=200&h=200");
     die;
 

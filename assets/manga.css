@@ -65,10 +65,6 @@ a {
 }
 
 .header-mini {
-    background-image: url("header.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top left;
     height: 60px;
     z-index: 1;
     width: 100%;
@@ -157,8 +153,9 @@ a {
 }
 
 .manga-header {
-    height: 320px;
+    height: 360px;
     overflow: hidden;
+    margin-top: -60px;
 }
 
 .manga-background {
