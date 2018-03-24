@@ -29,7 +29,7 @@
         </div>
 
         <div class="row padding-32 container">
-            <input type="search" placeholder="buscar..." class="font-large color-white z-depth-4 search" id="search"/>
+            <input type="search" placeholder="buscar..." class="font-large color-white z-depth-4 search" id="searchHome"/>
         </div>
     </div>
 </header>

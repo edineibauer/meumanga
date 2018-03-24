@@ -1,16 +1,16 @@
 <footer class="container col footer padding-32 color-grey-dark z-depth-inset-2">
     <div class="row-padding">
-        <div class="third">
+        <div class="third padding-large">
             <?php
             if (defined("LOGO") && !empty(LOGO))
-                echo "<a class='left margin-bottom' href='" . HOME . "'><img src='" . LOGO . "' class='padding-4 logo' title='" . SITENAME . "' alt='" . SITENAME . "' /></a><h1 class='padding-0' style='font-size:0'><b>" . SITENAME . "</b></h1>";
+                echo "<a class='col left margin-bottom' href='" . HOME . "'><img src='" . HOME . "image/" . LOGO . "&h=80' class='padding-4 logo' title='" . SITENAME . "' alt='" . SITENAME . "' /></a><h1 class='padding-0' style='font-size:0'><b>" . SITENAME . "</b></h1>";
             else
                 echo "<h1><b>" . SITENAME . "</b></h1>";
             ?>
             <p>Envie, Traduza e Leia. O <?=SITENAME?> trás o melhor do Anime para seu dia a dia.</p>
         </div>
 
-        <div class="third">
+        <div class="third padding-large">
             <ul>
                 <li class="padding-4 opacity hover-opacity-off">
                     <a href="<?=HOME?>termos" target="_blank">termos de uso</a>

@@ -1,67 +1,6 @@
-body {
-    background: #f1f1f1 !important;
-    font-family: "Raleway", sans-serif;
-}
-
 .logo {
     max-width: 500px;
     width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-.sidebar {
-    width: 220px;
-    transition: ease 0.3s;
-}
-
-.sidebar:hover {
-    width: 220px;
-}
-
-.sidebar:hover .sidebar-menu {
-    display: inline;
-}
-
-.i-search {
-    display: none!important;
-}
-
-.sidebar-menu #search {
-    margin:0 3px 5px 10px;
-}
-
-.sidebar-menu #search {
-    margin:0 3px 5px 10px;
-}
-
-.sidebar-nome, .sidebar-img, .sidebar-menu-ul a i, .sidebar-menu-ul a span {
-    position: absolute;
-    top: 0;
-    left: 18px;
-}
-
-.sidebar-img {
-    left: 5px;
-}
-
-.sidebar-menu-ul a i, .sidebar-menu-ul a span {
-    top: 8px;
-}
-
-.sidebar-menu-ul a {
-    height: 40px;
-}
-
-.sidebar-menu-ul .sidebar-menu {
-    left: 55px;
-    width: 162px;
-}
-
-.sidebar-nome {
-    left: 90px;
 }
 
 .header {
@@ -79,33 +18,16 @@ a {
     width: 100%;
 }
 
-.search {
+#searchHome {
     margin: auto;
     max-width: 500px;
     float: initial;
     padding-left: 15px;
 }
 
-.main section, .main footer {
-    z-index: 2;
-    position: relative;
-    float: left;
-}
-
-.first-content {
-}
-
 .mini-menu {
     padding: 28px 15px 27px;
     margin-right: 4px !important;
-}
-
-.menu {
-    float: left;
-}
-
-.menu a {
-    margin: 0 0 4px 0;
 }
 
 .login {
@@ -158,32 +80,7 @@ a {
 }
 
 @media (min-width: 992px) {
-    .sidebar {
-        width: 60px;
-    }
-
-    .sidebar-menu {
-        display: none;
-    }
-
-    .main, .header-mini, .footer, .headerDiv {
-        margin-left: 60px;
-        width: calc(100% - 60px);
-    }
-
-    .search {
+    #searchHome {
         margin-top: 50px;
-    }
-
-    .menu {
-        float: right;
-    }
-
-    .i-search {
-        display: block!important;
-    }
-
-    .sidebar:hover .i-search {
-        display: none!important;
     }
 }

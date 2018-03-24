@@ -2,10 +2,9 @@
 $user = !empty($_SESSION['userlogin']) ? $_SESSION['userlogin'] : ['nome' => 'Anônimo', 'nome_usuario' => 'anonimo', 'imagem' => ''];
 ?>
 
-
 <nav class="sidebar card collapse color-white animate-left" id="mySidebar">
     <div class="col padding-small margin-bottom relative margin-top" style="height: 50px">
-        <?=!empty($user['imagem']) ? "<img src='" . HOME . "tim.php?src=" . HOME . $user['imagem'] . "&h=70&w=70' class='sidebar-img left radius-circle' style='height:auto;max-width:50px;width:100%' />": '<i class="material-icons left font-jumbo">account_circle</i>'?>
+        <?=!empty($user['imagem']) ? "<img src='" . HOME . "tim.php?src=" . HOME . $user['imagem'] . "&h=70&w=70' class='sidebar-img left radius-circle' style='height:auto;max-width:50px;width:100%' />": '<i class="material-icons left font-xxxlarge">account_circle</i>'?>
 
         <span class="sidebar-nome sidebar-menu container padding-16"><?=$user['nome']?></span>
 
@@ -14,7 +13,7 @@ $user = !empty($_SESSION['userlogin']) ? $_SESSION['userlogin'] : ['nome' => 'An
         <span class="bar-item button relative padding-0">
             <i class="material-icons left padding-right i-search padding">search</i>
             <span class="left sidebar-menu" style="width: 200px">
-                <input type="search" placeholder="buscar..." class="color-white" id="search"/>
+                <input type="search" placeholder="buscar..." class="color-white search" id="searchSidebar"/>
             </span>
         </span>
         <a href="<?=HOME?>" onclick="w3_close()" class="bar-item button color-grey-light text-theme relative">
@@ -28,6 +27,10 @@ $user = !empty($_SESSION['userlogin']) ? $_SESSION['userlogin'] : ['nome' => 'An
         <a href="<?=HOME?>dashboard" onclick="w3_close()" class="bar-item button hover-text-theme color-hover-grey-light relative">
             <i class="material-icons left padding-right">create</i>
             <span class="left sidebar-menu">Minhas Histórias</span>
+        </a>
+        <a href="<?=HOME?>seguindo" onclick="w3_close()" class="bar-item button hover-text-theme color-hover-grey-light relative">
+            <i class="material-icons left padding-right">rss_feed</i>
+            <span class="left sidebar-menu">Seguindo</span>
         </a>
         <a href="<?=HOME?>discovery" onclick="w3_close()" class="bar-item button hover-text-theme color-hover-grey-light relative">
             <i class="material-icons left padding-right">location_searching</i>
@@ -52,15 +55,5 @@ $user = !empty($_SESSION['userlogin']) ? $_SESSION['userlogin'] : ['nome' => 'An
 <div class="overlay hide-large animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
      id="myOverlay"></div>
 
-<script>
-    // Script to open and close sidebar
-    function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-    }
-
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-    }
-</script>
+<link rel="stylesheet" href="<?=HOME?>assets/sidebar.css">
+<script src="<?=HOME?>assets/sidebar.js" defer ></script>
