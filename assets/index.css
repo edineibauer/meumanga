@@ -1,22 +1,3 @@
-.logo {
-    max-width: 500px;
-    width: 100%;
-}
-
-.header {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top left;
-    height: 350px;
-    z-index: 1;
-}
-
-.headerDiv {
-    position: fixed;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-}
 
 #searchHome {
     margin: auto;
@@ -79,8 +60,6 @@
     z-index: 2;
 }
 
-@media (min-width: 992px) {
-    #searchHome {
-        margin-top: 50px;
-    }
+#searchHome {
+    margin-top: 40px;
 }

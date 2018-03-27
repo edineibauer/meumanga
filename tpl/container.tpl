@@ -19,7 +19,7 @@
             <article class="col left margin-right" style="width: 237px">
                 <div class="col relative overflow-hidden border" style="height: 300px;">
                     <a href="{$home}manga/{$datum.name}" class="article-image overflow-hidden">
-                        <img src="{$home}tim.php?src={$datum.imagem}&h=316&w=237" alt="{$datum.nome}" title="{$datum.nome}"
+                        <img src="{$home}tim.php?src={$datum.imagem[0]['url']}&h=316&w=237" alt="{$datum.nome}" title="{$datum.nome}"
                              style="height: auto; width: 237px;"
                              class="hover-opacity article-img">
                     </a>

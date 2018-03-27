@@ -1,6 +1,6 @@
-<article class="col main relative">
+<article class="col main relative margin-bottom">
     <div class="col manga-header relative">
-        <img src="{$home}image/{$background[0]['url']}&w=1900" height="320" class="col manga-background"
+        <img src="{$home}image/{$background[0]['url']}&w=1900&h=320" height="320" class="col manga-background"
              alt="imagem de background de {$nome}"/>
         <header class="padding-32 relative margin-top">
             <br><br><br>

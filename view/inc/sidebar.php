@@ -56,4 +56,4 @@ $user = !empty($_SESSION['userlogin']) ? $_SESSION['userlogin'] : ['nome' => 'An
      id="myOverlay"></div>
 
 <link rel="stylesheet" href="<?=HOME?>assets/sidebar.css">
-<script src="<?=HOME?>assets/sidebar.js" defer ></script>
+<script src="<?=HOME?>assets/sidebar.js" defer></script>

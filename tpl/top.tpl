@@ -11,7 +11,7 @@
                     <article class="col">
                         <div class="col top-big relative overflow-hidden">
                             <a href="{$home}manga/{$datum.name}" class="article-image">
-                                <img src="tim.php?src={$datum.background}&h=190&w=320" alt="{$datum.nome}"
+                                <img src="image/{$datum.background[0]['url']}&h=190&w=320" alt="{$datum.nome}"
                                      title="{$datum.nome}" style="width:100%; height: 100%"
                                      class="hover-opacity article-img">
                                 <header class="row padding-small">
@@ -28,7 +28,7 @@
                     <article class="col left margin-right border-top">
                         <div class="col right overflow-hidden" style="width: 60px">
                             <a href="{$home}manga/{$datum.name}" class="overflow-hidden">
-                                <img src="tim.php?src={$datum.imagem}&h=60&w=60" alt="{$datum.nome}"
+                                <img src="image/{$datum.imagem[0]['url']}&h=60&w=60" alt="{$datum.nome}"
                                      title="{$datum.nome}"
                                      style="height: 60px; width: 60px;"
                                      class="hover-opacity article-img">

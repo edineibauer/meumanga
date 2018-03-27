@@ -29,13 +29,11 @@
                         <i class="material-icons left">home</i>
                         <span class="hide-small padding-left">Indíce</span>
                     </a>
-                    <a href="" id="pag-anterior"
-                       class="btn margin-bottom left margin-right color-border-green color-hover-teal color-text-teal color-white hover-shadow">
+                    <a href="" class="pag-leitor pag-anterior btn margin-bottom left margin-right color-border-green color-hover-teal color-text-teal color-white hover-shadow">
                         <i class="material-icons left">keyboard_arrow_left</i>
                         <span class="hide-small padding-left">Anterior</span>
                     </a>
-                    <a href="" id="pag-proximo"
-                       class="btn margin-bottom left margin-right color-border-green color-hover-teal color-text-teal color-white hover-shadow">
+                    <a href="" class="pag-leitor pag-proximo btn margin-bottom left margin-right color-border-green color-hover-teal color-text-teal color-white hover-shadow">
                         <i class="material-icons left">keyboard_arrow_right</i>
                         <span class="hide-small padding-left">Próximo</span>
                     </a>
@@ -50,6 +48,27 @@
             {foreach item=imagem from=$galeria}
                 <img class="col" src="{$home}image/{$imagem.url}&w=1920"/>
             {/foreach}
+            <nav class="col" style="padding-top: 32px">
+                <a href="{$home}manga/{$manga.name}"
+                   class="btn margin-bottom left margin-right color-border-green color-hover-teal color-text-teal color-white hover-shadow">
+                    <i class="material-icons left">home</i>
+                    <span class="hide-small padding-left">Indíce</span>
+                </a>
+                <a href="" class="pag-leitor pag-anterior btn margin-bottom left margin-right color-border-green color-hover-teal color-text-teal color-white hover-shadow">
+                    <i class="material-icons left">keyboard_arrow_left</i>
+                    <span class="hide-small padding-left">Anterior</span>
+                </a>
+                <a href="" class="pag-leitor pag-proximo btn margin-bottom left margin-right color-border-green color-hover-teal color-text-teal color-white hover-shadow">
+                    <i class="material-icons left">keyboard_arrow_right</i>
+                    <span class="hide-small padding-left">Próximo</span>
+                </a>
+                <div class="right">
+                    <button title="nunca mais perca um episódio"
+                            class="btn margin-bottom left margin-right color-border-red color-hover-red color-text-red color-white hover-shadow">
+                        <i class="material-icons left padding-right">rss_feed</i>Seguir
+                    </button>
+                </div>
+            </nav>
         </div>
     </div>
 </article>

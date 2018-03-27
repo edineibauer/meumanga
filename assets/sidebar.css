@@ -6,6 +6,59 @@ a {
     text-decoration: none;
 }
 
+.logo {
+    max-width: 75%;
+}
+
+.logo img{
+    width: 100%;
+    max-width: 300px;
+}
+
+.header-mini {
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.manga-header {
+    height: 420px;
+    overflow: hidden;
+    margin-top: -60px;
+}
+
+.manga-header header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.manga-header header h1{
+    height: 100px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.manga-background {
+    filter: sepia(100%);
+    height: auto;
+    width: 100%;
+    min-width: 800px;
+    min-height: 320px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.manga-content {
+    position: relative;
+    z-index: 3;
+}
+
 .main section, .main footer {
     z-index: 2;
     position: relative;
@@ -75,6 +128,10 @@ a {
 
 .menu a {
     margin: 0 0 4px 0;
+}
+
+.footer {
+    z-index: 5;
 }
 
 @media (min-width: 992px) {

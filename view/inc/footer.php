@@ -1,9 +1,9 @@
-<footer class="container col footer padding-32 color-grey-dark z-depth-inset-2">
+<footer class="container col footer relative padding-32 color-grey-dark z-depth-inset-2">
     <div class="row-padding">
         <div class="third padding-large">
             <?php
             if (defined("LOGO") && !empty(LOGO))
-                echo "<a class='col left margin-bottom' href='" . HOME . "'><img src='" . HOME . "image/" . LOGO . "&h=80' class='padding-4 logo' title='" . SITENAME . "' alt='" . SITENAME . "' /></a><h1 class='padding-0' style='font-size:0'><b>" . SITENAME . "</b></h1>";
+                echo "<a class='col left margin-bottom' href='" . HOME . "'><img src='" . HOME . "image/" . LOGO . "&h=80' class='col padding-4 logo' title='" . SITENAME . "' alt='" . SITENAME . "' /></a><h1 class='padding-0' style='font-size:0'><b>" . SITENAME . "</b></h1>";
             else
                 echo "<h1><b>" . SITENAME . "</b></h1>";
             ?>

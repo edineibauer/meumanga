@@ -3,4 +3,23 @@ function readCapitulos(offset) {
         $("#manga-capitulo").html(data);
     });
 }
-readCapitulos();
+
+function readNextCapitulo() {
+    post("meumanga", "read/leitorPagina", {capitulo: parseInt($("#capitulo-id").val())}, function (data) {
+        $(".pag-leitor").removeClass("disabled").prop("disabled", false);
+        if(data.anterior === null)
+            $(".pag-anterior").addClass("disabled").prop("disabled", true);
+        if(data.proximo === null)
+            $(".pag-proximo").addClass("disabled").prop("disabled", true);
+
+        $(".pag-anterior").attr("href", data.anterior);
+        $(".pag-proximo").attr("href", data.proximo);
+    });
+}
+
+$(function () {
+    if ($("#manga-id").length)
+        readCapitulos();
+    else
+        readNextCapitulo();
+});

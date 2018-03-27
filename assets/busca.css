@@ -1,3 +1,26 @@
+.header-mini {
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+}
+
+.manga-header {
+    height: 360px;
+    overflow: hidden;
+    margin-top: -60px;
+}
+
+.manga-background {
+    filter: sepia(100%);
+    height: auto;
+    width: 100%;
+    min-width: 600px;
+    min-height: 320px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .manga-content {
     max-width: 1200px;
     width: 100%;
