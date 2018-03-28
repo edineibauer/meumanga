@@ -55,5 +55,5 @@ $user = !empty($_SESSION['userlogin']) ? $_SESSION['userlogin'] : ['nome' => 'An
 <div class="overlay hide-large animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
      id="myOverlay"></div>
 
-<link rel="stylesheet" href="<?=HOME?>assets/sidebar.css">
-<script src="<?=HOME?>assets/sidebar.js" defer></script>
+<link rel="stylesheet" href="<?=HOME . (DEV && DOMINIO === "meumanga" ? "" : "vendor/conn/meumanga/")?>assets/sidebar.css">
+<script src="<?=HOME . (DEV && DOMINIO === "meumanga" ? "" : "vendor/conn/meumanga/")?>assets/sidebar.js" defer></script>
