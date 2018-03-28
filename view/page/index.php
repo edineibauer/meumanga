@@ -40,7 +40,7 @@ $header = str_replace('\\', '/', json_decode($read->getResult()[0]['background']
     */
     ?>
 
-    <section class="row padding-32 container z-depth-2 first-content relative color-grey-light">
+    <section class="row padding-32 container z-depth-2 relative color-grey-light" style="margin-left: -1px;">
         <div class="container">
 
             <?php
@@ -153,7 +153,7 @@ $header = str_replace('\\', '/', json_decode($read->getResult()[0]['background']
         <header class="col">
             <h1 class="align-center">Junte-se à <?=$num?> Pessoas...</h1>
             <div class="col align-center">
-                <button class="btn-large theme font-xxlarge hover-shadow upper font-bold" style="margin: auto;float:initial">Criar Conta!</button>
+                <a href="<?=HOME?>cadastro-usuario" class="btn-large theme font-xxlarge hover-shadow upper font-bold" style="margin: auto;float:initial">Criar Conta!</a>
             </div>
         </header>
 

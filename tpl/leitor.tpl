@@ -21,8 +21,8 @@
     </div>
 
     <div class="col manga-content relative">
-        <div class="col color-white z-depth-2 manga-content-card">
-            <div class="col">
+        <div class="col color-white z-depth-2 manga-content-card leitor-content">
+            <div class="col div-nav">
                 <nav class="left">
                     <a href="{$home}manga/{$manga.name}"
                        class="btn margin-bottom left margin-right color-border-green color-hover-teal color-text-teal color-white hover-shadow">
@@ -40,7 +40,7 @@
                 </nav>
                 <div class="right">
                     <button title="nunca mais perca um episódio"
-                            class="btn margin-bottom left margin-right color-border-red color-hover-red color-text-red color-white hover-shadow">
+                            class="btn margin-bottom left color-border-red color-hover-red color-text-red color-white hover-shadow">
                         <i class="material-icons left padding-right">rss_feed</i>Seguir
                     </button>
                 </div>
@@ -48,7 +48,7 @@
             {foreach item=imagem from=$galeria}
                 <img class="col" src="{$home}image/{$imagem.url}&w=1920"/>
             {/foreach}
-            <nav class="col" style="padding-top: 32px">
+            <nav class="col div-nav" style="padding-top: 32px">
                 <a href="{$home}manga/{$manga.name}"
                    class="btn margin-bottom left margin-right color-border-green color-hover-teal color-text-teal color-white hover-shadow">
                     <i class="material-icons left">home</i>
@@ -64,7 +64,7 @@
                 </a>
                 <div class="right">
                     <button title="nunca mais perca um episódio"
-                            class="btn margin-bottom left margin-right color-border-red color-hover-red color-text-red color-white hover-shadow">
+                            class="btn margin-bottom left color-border-red color-hover-red color-text-red color-white hover-shadow">
                         <i class="material-icons left padding-right">rss_feed</i>Seguir
                     </button>
                 </div>

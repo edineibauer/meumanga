@@ -49,6 +49,21 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
 }
 
+.container-article {
+    width: 237px;
+    max-width: 48%;
+    margin-right: 2%;
+}
+
+.container-article-image {
+    height: 300px;
+}
+
+.container-article-image img {
+    height: auto;
+    width: 237px;
+}
+
 .content-top .top-big, .content-top .top-big a {
     height: 190px;
 }
