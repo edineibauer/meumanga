@@ -1,6 +1,6 @@
 <article class="col main relative margin-bottom">
     <div class="col manga-header relative">
-        <img src="{$home}vendor/conn/meumanga/assets/cat.jpg&w=1900" height="320" class="col manga-background"/>
+        <img src="{$home}image/vendor/conn/meumanga/assets/cat.jpg&w=1900" height="320" class="col manga-background"/>
         <header class="padding-32 relative margin-top">
             <br><br><br>
             <p class="align-center col s12 margin-0 font-large color-text-white">
