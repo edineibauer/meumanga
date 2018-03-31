@@ -4,9 +4,17 @@ $user = !empty($_SESSION['userlogin']) ? $_SESSION['userlogin'] : ['nome' => 'An
 
 <nav class="sidebar card collapse color-white animate-left" id="mySidebar">
     <div class="col padding-small margin-bottom relative margin-top" style="height: 50px">
-        <?=!empty($user['imagem']) ? "<img src='" . HOME . "tim.php?src=" . HOME . $user['imagem'] . "&h=70&w=70' class='sidebar-img left radius-circle' style='height:auto;max-width:50px;width:100%' />": '<i class="material-icons left font-xxxlarge">account_circle</i>'?>
 
-        <span class="sidebar-nome sidebar-menu container padding-16"><?=$user['nome']?></span>
+        <?=!empty($user['imagem']) ? "<img src='" . HOME . "tim.php?src=" . HOME . $user['imagem'] . "&h=70&w=70' class='sidebar-img left radius-circle' style='height:auto;max-width:50px;width:100%' />": '<i class="material-icons left font-xxxlarge">account_circle</i>'?>
+        <div class="sidebar-nome sidebar-menu container padding-4">
+            <span class="col font-large upper font-bold color-text-grey-dark"><?=ucwords($user['nome'])?></span>
+            <span class="col upper color-text-grey font-small nivelBloco">
+                <?php
+                $tpl = new \Helpers\Template("meumanga");
+                $tpl->show("starNivel", ["nivel" => $user['nivel']]);
+                ?>
+            </span>
+        </div>
 
     </div>
     <div class="bar-block sidebar-menu-ul relative col">

@@ -42,7 +42,7 @@
         width: calc(100% - 60px);
     }
 
-    #manga-capitulo {
+    #manga-capitulo, #categoria-corpo {
         padding-right: 30px;
     }
 

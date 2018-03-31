@@ -102,6 +102,10 @@ a {
     left: 18px;
 }
 
+.nivelBloco:hover .nivelName {
+    display: block!important;
+}
+
 .sidebar-img {
     left: 5px;
 }
@@ -120,7 +124,8 @@ a {
 }
 
 .sidebar-nome {
-    left: 90px;
+    left: 62px;
+    cursor: default;
 }
 
 .menu {

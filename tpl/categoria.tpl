@@ -20,7 +20,6 @@
                 </span>
             </div>
             <div class="col s12 l8 left">
-
                 <div class="col">
                     <button class="btn margin-bottom border-theme left theme">
                         <i class="material-icons left">access_time</i>
