@@ -19,12 +19,14 @@
         <div class="col color-white z-depth-2 manga-content-card">
             <div class="col s12 l4 right">
                 <div class="col">
-                    <button title="nunca mais perca um episódio"
-                            class="btn margin-bottom left margin-right color-border-red color-hover-red color-text-red color-white hover-shadow">
-                        <i class="material-icons left padding-right">rss_feed</i>Seguir
+                    <button title="nunca mais perca um episódio" rel="{$id}"
+                            class="btn {$classFollow}follow-btn margin-bottom left margin-right color-border-red hover-shadow">
+                        <i class="material-icons left padding-right">rss_feed</i>
+                        <span class="left">{$follow}</span>
                     </button>
                     <button class="btn left color-teal hover-shadow color-border-green">
-                        <i class="material-icons left padding-right">chrome_reader_mode</i>Começar a Ler
+                        <i class="material-icons left padding-right">chrome_reader_mode</i>
+                        <span class="left">Ler</span>
                     </button>
                 </div>
 

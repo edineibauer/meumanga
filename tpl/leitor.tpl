@@ -39,9 +39,10 @@
                     </a>
                 </nav>
                 <div class="right">
-                    <button title="nunca mais perca um episódio"
-                            class="btn margin-bottom left color-border-red color-hover-red color-text-red color-white hover-shadow">
-                        <i class="material-icons left padding-right">rss_feed</i>Seguir
+                    <button title="nunca mais perca um episódio" rel="{$manga.id}"
+                            class="btn margin-bottom left color-border-red {$classFollow}follow-btn hover-shadow">
+                        <i class="material-icons left padding-right">rss_feed</i>
+                        <span class="left">{$follow}</span>
                     </button>
                 </div>
             </div>
@@ -63,9 +64,10 @@
                     <span class="hide-small padding-left">Próximo</span>
                 </a>
                 <div class="right">
-                    <button title="nunca mais perca um episódio"
-                            class="btn margin-bottom left color-border-red color-hover-red color-text-red color-white hover-shadow">
-                        <i class="material-icons left padding-right">rss_feed</i>Seguir
+                    <button title="nunca mais perca um episódio" rel="{$manga.id}"
+                            class="btn margin-bottom left color-border-red {$classFollow}follow-btn hover-shadow">
+                        <i class="material-icons left padding-right">rss_feed</i>
+                        <span class="left">{$follow}</span>
                     </button>
                 </div>
             </nav>
