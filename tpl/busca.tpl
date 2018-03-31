@@ -1,6 +1,6 @@
 <div class="col main relative margin-bottom">
     <div class="col manga-header relative">
-        <img src="{$home}image/view/inc/busca.jpg&w=1900" height="320" class="col manga-background"/>
+        <img src="{$home}vendor/conn/meumanga/assets/cat.jpg&w=1900" height="320" class="col manga-background"/>
         <header class="padding-32 relative margin-top">
             <div class="col padding-xlarge"><br></div>
             <p class="align-center color-text-grey font-xlarge text-shadow font-bold margin-0 padding-0 padding-top">Busca por..</p>

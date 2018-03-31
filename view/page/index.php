@@ -65,7 +65,7 @@ $header = str_replace('\\', '/', json_decode($read->getResult()[0]['background']
         </div>
     </section>
 
-    <section class="col container align-center z-depth-inset-2 login padding-64">
+    <section class="col container align-center z-depth-inset-2 login padding-64" style="background-image: url('<?=HOME?>vendor/conn/meumanga/assets/subscription.jpg');">
         <h2 class="font-light font-xlarge padding-32 container color-text-white text-shadow">
             <p><b class="upper">Acompanhe, Descubra, Compartilhe</b></p>
 

@@ -1,7 +1,6 @@
 <article class="col main relative margin-bottom">
     <div class="col manga-header relative">
-        <img src="{$home}image/view/inc/cat.jpg&w=1900" height="320" class="col manga-background"
-             alt="imagem de background de {$titulo}"/>
+        <img src="{$home}vendor/conn/meumanga/assets/cat.jpg&w=1900" height="320" class="col manga-background"/>
         <header class="padding-32 relative margin-top">
             <br><br><br>
             <p class="align-center col s12 margin-0 font-large color-text-white">
@@ -14,7 +13,11 @@
 
     <div class="col manga-content relative">
         <div class="col color-white z-depth-2 manga-content-card">
-            <div class="col s12 l4 right" id="sidebar-content">
+            <div class="col s12 l4 right font-large font-light" id="sidebar-content">
+                <h2 class="col upper font-xlarge color-text-grey-dark">Descrição:</h2>
+                <span class="col color-text-grey">
+                    {$descricao}
+                </span>
             </div>
             <div class="col s12 l8 left">
 
