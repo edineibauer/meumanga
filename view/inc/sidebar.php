@@ -11,7 +11,7 @@ $user = !empty($_SESSION['userlogin']) ? $_SESSION['userlogin'] : ['nome' => 'An
             <span class="col upper color-text-grey font-small nivelBloco">
                 <?php
                 $tpl = new \Helpers\Template("meumanga");
-                $tpl->show("starNivel", ["nivel" => $user['nivel']]);
+                $tpl->show("starNivel", ["nivel" => !empty($user['nivel']) ? $user['nivel'] : 4]);
                 ?>
             </span>
         </div>

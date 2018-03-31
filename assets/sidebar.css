@@ -102,6 +102,10 @@ a {
     left: 18px;
 }
 
+.nivelBloco {
+    margin-left: -2px;
+}
+
 .nivelBloco:hover .nivelName {
     display: block!important;
 }
