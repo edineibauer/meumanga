@@ -6,14 +6,14 @@ if (empty($_SESSION)) {
     $data['error'] = "Faça login Antes";
 } else {
     $read = new \ConnCrud\Read();
-    $read->exeRead(PRE . "pessoa_manga_seguindo", "WHERE pessoa_id = :li && manga_id = :mi", "li={$_SESSION['userlogin']['pessoa']}&mi={$id}");
+    $read->exeRead(PRE . "login_manga_seguindo", "WHERE login_id = :li && manga_id = :mi", "li={$_SESSION['userlogin']['id']}&mi={$id}");
     if($read->getResult()) {
         $del = new \ConnCrud\Delete();
-        $del->exeDelete(PRE . "pessoa_manga_seguindo", "WHERE pessoa_id = :li && manga_id = :mi", "li={$_SESSION['userlogin']['pessoa']}&mi={$id}");
+        $del->exeDelete(PRE . "login_manga_seguindo", "WHERE login_id = :li && manga_id = :mi", "li={$_SESSION['userlogin']['id']}&mi={$id}");
         $data['data'] = "2";
     } else {
         $create = new \ConnCrud\Create();
-        $create->exeCreate(PRE . "pessoa_manga_seguindo", ["pessoa_id" => $_SESSION['userlogin']['pessoa'],"manga_id" => $id]);
+        $create->exeCreate(PRE . "login_manga_seguindo", ["login_id" => $_SESSION['userlogin']['id'],"manga_id" => $id]);
         $data['data'] = "1";
     }
 }

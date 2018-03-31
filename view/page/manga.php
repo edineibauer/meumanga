@@ -13,7 +13,7 @@ if (!empty($link->getUrl()[2]) && $link->getUrl()[2] === "capitulo") {
         $dados['classFollow'] = "color-hover-red color-text-red color-white ";
         if (!empty($_SESSION['userlogin'])) {
             $read = new \ConnCrud\Read();
-            $read->exeRead(PRE . "pessoa_manga_seguindo", "WHERE pessoa_id = :li && manga_id = :mi", "li={$_SESSION['userlogin']['pessoa']}&mi={$dados['id']}");
+            $read->exeRead(PRE . "login_manga_seguindo", "WHERE login_id = :li && manga_id = :mi", "li={$_SESSION['userlogin']['id']}&mi={$dados['id']}");
             if ($read->getResult()) {
                 $dados['follow'] = "Seguindo";
                 $dados['classFollow'] = "color-text-white color-red ";
@@ -33,7 +33,7 @@ if (!empty($link->getUrl()[2]) && $link->getUrl()[2] === "capitulo") {
         $data['classFollow'] = "color-hover-red color-text-red color-white ";
         if (!empty($_SESSION['userlogin'])) {
             $read = new \ConnCrud\Read();
-            $read->exeRead(PRE . "pessoa_manga_seguindo", "WHERE pessoa_id = :li && manga_id = :mi", "li={$_SESSION['userlogin']['pessoa']}&mi={$data['id']}");
+            $read->exeRead(PRE . "login_manga_seguindo", "WHERE login_id = :li && manga_id = :mi", "li={$_SESSION['userlogin']['id']}&mi={$data['id']}");
             if ($read->getResult()) {
                 $data['follow'] = "Seguindo";
                 $data['classFollow'] = "color-text-white color-red ";
