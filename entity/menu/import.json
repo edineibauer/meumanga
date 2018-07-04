@@ -1,0 +1,10 @@
+[
+  {
+    "icon": "storage",
+    "title": "import",
+    "action": "page",
+    "lib": "meumanga",
+    "file": "import/hintomia",
+    "setor": 2
+  }
+]

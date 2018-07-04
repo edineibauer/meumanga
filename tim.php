@@ -1,21 +1,10 @@
 <?php
-/**
- * TimThumb script created by Ben Gillbanks, originally created by Tim McDaniels and Darren Hoyt
- * http://code.google.com/p/timthumb/
- *
- * GNU General Public License, version 2
- * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
- *
- * Examples and documentation available on the project homepage
- * http://www.binarymoon.co.uk/projects/timthumb/
- */
-
 define('CACHE_SIZE', 1500);                // number of files to store before clearing cache
 define('CACHE_CLEAR', 30);                    // maximum number of files to delete on each cache clear
 define('CACHE_USE', TRUE);                    // use the cache files? (mostly for testing)
 define('CACHE_MAX_AGE', 864000);            // time to cache in the browser
 define('VERSION', '1.28');                    // version number (to force a cache refresh)
-define('DIRECTORY_CACHE', './cache');        // cache directory
+define('DIRECTORY_CACHE', './cacheImage');        // cache directory
 define('MAX_WIDTH', 4000);                    // maximum image width
 define('MAX_HEIGHT', 4000);                // maximum image height
 define('ALLOW_EXTERNAL', FALSE);            // allow external website (override security precaution - not advised!)
@@ -807,7 +796,7 @@ function get_document_root($src) {
  */
 function display_error($errorString = '') {
 
-    require('./_config/config.php');
+    require('./_app/Config.inc.php');
     header("Location: " . HOME . "/tim.php?src=" . HOME . "/uploads/demo.jpg&w=200&h=200");
     die;
 
